@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP Expert</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img align="left" src="ERP LOGO.PNG" width="200x" height="100">
+        <h1>ERP Expert</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            <a href="">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Best Accounting Software for Your Business</h2>
+    </section>
+
+    <section class="products">
+        <div class="product">
+            <img src="pharmacy.jpg" width="150px" alt="Pharma Retail Software">
+            <h3>Pharma Retail Software</h3>
+            <p>Price: ₹8999</p>
+            <button onclick="addToCart('Pharma Retail Software', 8999)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="mobile store.jpg" width="150" alt="Mobile Store Management Software">
+            <h3>Mobile Store Management</h3>
+            <p>Price: ₹8900</p>
+            <button onclick="addToCart('Mobile Store Management', 8999)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="retail bill.jpg" width="150px" alt="Retail Genaral Billing">
+            <h3>Retail Genaral Billing</h3>
+            <p>Price: ₹8999</p>
+            <button onclick="addToCart('Retail Genaral Billing', 8999)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Automobile.jpg" width="150px" alt="Automobile Software">
+            <h3>Automobile Software</h3>
+            <p>Price: ₹12600</p>
+            <button onclick="addToCart('Automobile Software', 12600)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Optical store.jpg" width="150px" alt="Optical Store Software">
+            <h3>Optical Store Software</h3>
+            <p>Price: ₹12600</p>
+            <button onclick="addToCart('Optical Store Software', 12600)">Add to Cart</button>
+        </div>
+       
+       
+    </section>
+    <style>
+        /* Container for Social Icons */
+        .social-icons {
+            position: fixed; /* Fix at Left Side */
+            left: 20px; /* Distance from Left */
+            top: 50%; /* Center Vertically */
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column; /* Vertical Alignment */
+            gap: 15px; /* Space between Icons */
+        }
+
+        /* Anchor Tag for Clickable Images */
+        .social-icons a {
+            display: block;
+        }
+
+        /* Styling for Images */
+        .social-icons img {
+            width: 50px; /* Image Size */
+            height: 50px;
+            border-radius: 50%; /* Circular Shape */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hover Effect */
+        .social-icons img:hover {
+            transform: scale(1.2); /* Zoom Effect */
+        }
+    </style>
+
+
+    <div class="social-icons">
+        <!-- Facebook Link -->
+        <a href="https://www.facebook.com/h" target="_blank">
+            <img src="Facebook logo.png" alt="Facebook">
+        </a>
+
+        <!-- YouTube Link -->
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="youtube logo.png" alt="YouTube">
+        </a>
+
+        <!-- Instagram Link -->
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="instagram logo.jpg" alt="Instagram">
+        </a>
+
+        <!-- Twitter Link -->
+        <a href="https://x.com" target="_blank">
+            <img src="twitter logo.png" alt="Twitter">
+        </a>
+    </div>
+    <style>
+
+      /* Centering the buttons */
+      .button-container {
+          display: flex;
+          flex-direction: column; 
+          align-items: center; /* Center Horizontally */
+          gap: 20px; /* Space between buttons */
+          margin-top: 50px; /* Space from top */
+      }
+
+      /* Common Button Styling */
+      .icon-btn, .icon-btn2 {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: blue;
+          color: white;
+          text-decoration: none;
+          border-radius: 10px;
+          font-size: 16px;
+          text-align: center;
+      }
+
+      .icon-btn:hover {
+          background-color: greenyellow;
+      }
+
+      .icon-btn2:hover {
+          background-color: green;
+      }
+  </style>
+
+
+  <div class="button-container">
+      <!-- About Us Button -->
+      <a href="/about us .html" class="icon-btn">
+          <span>About Us</span> &#x2B07;
+      </a>
+
+      <!-- Contact Us Button -->
+      <a href="/products.html" class="icon-btn2">
+          <span>Products</span> &#x2B07;
+      </a>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p><strong>Phone:</strong> +91 6230112700,+91 76508 12700</p>
+        <p><strong>Email:</strong> erpexpert19@gmail.com</p>
+        <p><strong>Address:</strong> Near PNB Bank Bhota Tahseal District Hamirpur
+        Himachal Pradesh</p>
+      </div>
+      
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+          <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+          <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 ERP Expert. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
