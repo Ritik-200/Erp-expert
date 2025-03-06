@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <main>
+        <form action="https://formsubmit.co/rt1869700@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <textarea name="address" placeholder="Your Address" required></textarea>
+            <input type="hidden" name="_autoresponse" value="Your order has been received! We will contact you soon.">
+            <button type="submit">Place Order</button>
+        </form>
+        <p id="orderMessage"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
