@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav a {
+    color: green;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.banner {
+    background: #0974c1;
+    padding: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid red;
+    padding: 15px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+/* Mobile-friendly adjustments */
+@media screen and (max-width: 768px) {
+    body {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    .products-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+/* Further improvements for very small screens */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+/* General Footer Styles */
+footer {
+    padding: 40px 20px;
+    background-image: url('blue\ background.avif'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info,
+  .social-media {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  p {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media ul li {
+    margin: 10px 0;
+  }
+  
+  .social-media a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s;
+  }
+  
+  .social-media a:hover {
+    color: #0073e6; /* Hover effect color */
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contact-info,
+    .social-media {
+      margin: 10px 0;
+    }
+  }
+  
